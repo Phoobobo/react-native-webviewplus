@@ -7,6 +7,8 @@ import ReactNative, {
   View,
   ViewPropTypes,
   requireNativeComponent,
+  Platform,
+  WebView,
 } from 'react-native';
 
 const PropTypes = require('prop-types');
@@ -34,7 +36,7 @@ const defaultRenderLoading = () => (
 /**
  * Renders a native WebView.
  */
-class WebView extends React.Component {
+class WebViewPlus extends React.Component {
   static get extraNativeComponentConfig() {
     return {
       nativeOnly: {
@@ -432,7 +434,7 @@ class WebView extends React.Component {
   }
 }
 
-const RCTWebView = requireNativeComponent('RNWebViewPlus', WebView, WebView.extraNativeComponentConfig);
+const RCTWebView = requireNativeComponent('RNWebViewPlus', WebViewPlus, WebViewPlus.extraNativeComponentConfig);
 
 const styles = StyleSheet.create({
   container: {
@@ -452,5 +454,5 @@ const styles = StyleSheet.create({
   },
 });
 
-module.exports = WebView;
+module.exports = Platform.OS === 'android' ? WebViewPlus : WebView;
 
