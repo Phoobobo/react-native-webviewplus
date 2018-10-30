@@ -15,9 +15,6 @@
     "email": "phoobobo@163.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "react-native": "^0.55.4"
-  },
   "peerDependencies": {
     "react-native": "^0.55.4"
   },
