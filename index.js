@@ -1,28 +1,19 @@
+import React from 'react';
+import ReactNative, { 
+  EdgeInsetsPropType,
+  ActivityIndicator,
+  StyleSheet,
+  UIManager,
+  View,
+  ViewPropTypes,
+  deprecatedPropType,
+  requireNativeComponent,
+  resolveAssetSource,
+} from 'react-native';
 
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @providesModule WebView
- */
-'use strict';
-
-const EdgeInsetsPropType = require('EdgeInsetsPropType');
-const ActivityIndicator = require('ActivityIndicator');
-const React = require('React');
 const PropTypes = require('prop-types');
-const ReactNative = require('ReactNative');
-const StyleSheet = require('StyleSheet');
-const UIManager = require('UIManager');
-const View = require('View');
-const ViewPropTypes = require('ViewPropTypes');
 
-const deprecatedPropType = require('deprecatedPropType');
 const keyMirror = require('fbjs/lib/keyMirror');
-const requireNativeComponent = require('requireNativeComponent');
-const resolveAssetSource = require('resolveAssetSource');
 
 const RCT_WEBVIEW_REF = 'webview';
 
