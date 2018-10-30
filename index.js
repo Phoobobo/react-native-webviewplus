@@ -6,14 +6,14 @@ import ReactNative, {
   UIManager,
   View,
   ViewPropTypes,
-  deprecatedPropType,
   requireNativeComponent,
-  resolveAssetSource,
 } from 'react-native';
 
 const PropTypes = require('prop-types');
 
 const keyMirror = require('fbjs/lib/keyMirror');
+const deprecatedPropType = require('react-native/Libraries/Utilities/deprecatedPropType');
+const resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource.js');
 
 const RCT_WEBVIEW_REF = 'webview';
 
