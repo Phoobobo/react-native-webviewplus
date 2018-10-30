@@ -1,6 +1,6 @@
 {
   "name": "react-native-webviewplus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "an enhanced react native webview",
   "main": "index.js",
   "scripts": {
